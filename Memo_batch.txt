@@ -1,0 +1,136 @@
+    1  git--version
+    2  git --version
+    3  sudo apt install git
+    4  git --version                         // connaitre la version du git
+    5  ls                                    // lister le dossier courant
+    7  ls ~                                 // Liste les repertoires au dessus de celui où je me situe
+    8  pwd                                  // permet de connaitre ma position dans l'arborescence
+    9  mkdir test3                          // créer un repertoire test3
+   10  ls                                   
+   11  cd test3/                            // cd permet de se deplacer et d'aller dans le repertoire test3
+   12  ls                                   // Permet de lister ce qu'il y a dans le repertoire test3
+   13  ls -l                                // Permet de lister ce qu'il y a dans le repertoire test3 avec plus d'informations comme les droits etc ...
+   14  touch file.txt                       // création de fichier vide
+   15  ls                                   // Permet de lister ce qu'il y a dans le repertoire test3
+   16  vi file.txt                          // editeur de texte qui créer et permet de traiter un fichier
+   17  ls
+   18  pwd                                  // connaitre où on se situe
+   19  cat file.txt                         // permet de lire le fichier file.txt sans y entrer
+   20  code file.txt                        // Ouvrir le fichier file avec le software visual code
+   21  emacs -nw file.txt                   // emacs est un editeur de text
+   22  man ls                               // Fourni information sur ls - une aide
+   23  who                                  // information sur les comptes crée dans la machine
+   24  history                              // liste des commandes tapé
+   25  history > history_log.txt            // liste des commande tapé redirigé vers un fichier
+    
+    
+  
+   28  cat history_log.txt                  // permet de consulter le fichier history_log.txt
+   29  cd ..                                // remonte dans l'arborescence du dessus
+   30  pwd                                  // Donne notre possition dans l'arborescence
+   31  ls                                   // Liste les fichiers et dossiers
+   32  ls ~                                 // Liste les dossiers de l'arborescence au dessus 
+   33  ls                                   // liste
+   34  man                                  // Donne des informations sur une commande donc s'ecris "man lacommande"
+   36  man ls
+  
+
+   41  who                                  //  information sur les comptes crée dans la machine                        
+  
+   
+   50  cp file2.txt file3.txt               // copie le contenue de file2.txt dans file3.txt avec risque d'ecraser ce qu'il y a dans file3.txt
+   51  ls
+   52  rm file2.txt                         // Effacer le file2.txt, il n'y a aucune demande de confirmation; le fichier est éffacé et puis tans pis
+   53  ls
+   54  vi file3.txt                         // editeur, mais j'ai decouvert "nano" et c'est mieux
+   55  bach
+   56  batch
+   57  echo salut                           // permet d'afficher salut, utilisable dans des programme pour la suite
+   58  pwd                                  // Donne notre possition dans l'arborescence
+   59  mkdir welcome2                       // création du répertoire welcome2
+   60  cd welcome2/                         // permet d'aller dans le repertoire welcome2
+   61  touch toto.txt                       // création du fichier toto.txt
+   62  cd ..                                // remonter dans l'arborescence du dessus - càd quitter welcome2
+   63  ls welcome2/
+   64  rm -r welcome2/                      // supprimer le repertoire welcome2 avec les arborescence "Tres dangereux"
+
+   70  ls
+   71  ls -l|grep jpg |wc -l                // Liste les fichier; envoie les resultats dans grep qui va rechercher le nombre mot ayant jpg 
+   72  ls -l
+   73  wc                                   // commande qui permet de compter mais ne s'ecris jamais seul comme ça
+   74  date                                 // Donne la date
+ 
+  
+   77  ls --all                             // Liste tous les repertoires et fichiers cachés
+   78  ls -p Document                       // permet de lister le dossier Document sans y entrer 
+   79  pwd                                  // Donne notre possition dans l'arborescence
+  
+
+   88  cd /                                 // permet de revenir au début de son arborescence
+   89  pwd                                  // Donne notre possition dans l'arborescence
+   90  ls -F
+   91  cd usr/                              // Permet d'aller dans le dossier system "/usr"
+   92  pwd
+   93  ls -F
+   94  cd games/                            // "cd" permet de se déplacer d'un répertoire à l'autre
+   95  cd ..                                // "cd" permet de se déplacer d'un répertoire à l'autre
+   96  cd ../..                             // "cd" permet de se déplacer d'un répertoire à l'autre
+   97  cd ../../usr/games/                  // "cd" permet de se déplacer d'un répertoire à l'autre
+   
+   99  cd ~                                 // "cd" permet de se déplacer d'un répertoire à l'autre
+  100  pwd                                  // Donne notre possition dans l'arborescence
+  101  cd
+  102  pwd                                  // Donne notre possition dans l'arborescence
+  103  du                                   // Permet d'afficher la taille du fichier avec bcp d'option 
+  104  du -h                                // Permet d'afficher la taille du fichier avec bcp d'option 
+  105  du -ah                               // Permet d'afficher la taille du fichier avec bcp d'option 
+  106  du -sh
+  107  cat syslog
+  108  cd
+  109  ls
+  110  cd test3/
+  111  ls
+  112  cat file3.txt                        // cat permet d'afficher le contenu d'un fichier
+  113  ls
+  114  head history_log.txt                 // Permet d'afficher le début d'un fichier
+  115   
+  116  head -n 22 history_log.txt           // Permet d'afficher les 22 premiere lignes d'un fichier
+  117  tail history_log.txt                 // Permet d'afficher les derniere ligne d'un fichier
+  118  touch fichierbidon                   // touch permet de creer un fichier
+  119  ls -l
+  120  ls -F
+  121  rm fichierbidon                      // Effacer le fichier
+  122  touch fichierBidon fichierBidon.txt
+  123  ls -F
+  124  touch "je suis"                      // creation de fichier avec un espace
+  125  ls -F
+  126  ls
+  127  mkdir dossier autre dossier           // Creation de plusieurs dossiers en une seul commande
+  128  ls
+  129  mkdir animal/canin/chiwawa           // Creation de dossier et sous dossier
+  130  mkdir -p animal/canin/chiwawa        // Creation de dossier et de sous dossier
+  131  ls -F
+  132  ls -p animal/                        // Affichage du dossier animal
+  133  ls
+  134  cp -R animal autreAnimal             // copier le dossier animal dans le dossier autreAnimal avec les sous dossiers
+  135  cd animal/                           // Aller dans le dossier animal
+  136  ls
+  137  cd ..
+  
+  177  sudo su                              // Permet d'avoir les droits root / Administrateur
+
+  208  grep ceci file3.txt                  // Compter les mots "ceci" dans le fichier file3.txt
+  209  cd
+  210  ls
+  211  ls -al
+  212  grep alias .bashrc                   // compter les mots "alias" dans le fichier .bashrc 
+ 
+  226  less file3.txt                       // Afficher le fichier file3.txt
+
+  241  nano nom.txt                             // Editer le fichier nom.txt
+  242  sort nom.txt                             // Trier le fichier
+
+  247  nano nom.txt                             // Editer le fichier nom.txt
+
+  255  wc file3.txt                         // Affiche - le nombre de lignes, le nombre de mots et le nombre d'octets
+  

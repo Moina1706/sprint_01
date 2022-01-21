@@ -1,0 +1,127 @@
+    1  git--version
+    2  git --version
+    3  sudo apt install git
+    4  git --version 
+
+  268  git status                               //affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés
+  269  clear
+  270  git status                               //affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés
+  271  git init                                 //Permet de créer un nouveau dépôt GIT
+  272  git status                               //affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés
+  273  ls
+  274  touch readme.rd                      
+  275  git status
+  276  git add readme.rd 
+  277  git status                               //affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés
+  278  git commit
+  279  git config --global user.email "moina.comoros@yahoo.fr"
+  280  git config --global user.name "Moina"
+
+
+  281  git commit                                // La commande git commit permet de valider les modifications apportées au HEAD.
+                                                 Notez que tout commit ne se fera pas dans le dépôt distant.   
+                                                 git commit –m “Description du commit”
+  282  git status
+  283  ls
+  284  nano readme.rd 
+  285  gid status
+  286  git status
+  287  git add readme.rd                         //La commande git add peut être utilisée pour ajouter des fichiers à l’index.
+                                                  Par exemple, la commande suivante ajoutera un fichier nommé readme.rd dans le répertoire local de l’index 
+  288  git status                                //affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés
+  289  git commit                                // La commande git commit permet de valider les modifications apportées au HEAD.
+                                                     Notez que tout commit ne se fera pas dans le dépôt distant.   
+ 
+  302  mkdir premier_depot_exemple              // Création d'un repertoire
+
+  303  cp index.html premier_depot_exemple/      // copier un fichier index.html dans le repertoire premier_depot
+  304  cd premier_depot_exemple/
+  305  git status                                // Affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés
+  306  git init                                  // Cette commande est utilisée pour créer un nouveau dépôt GIT 
+  307  git add index.html                        // La commande git add peut être utilisée pour ajouter des fichiers à l’index.
+  308  git status                                //  Affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés
+  309  git commit                                // La commande git commit permet de valider les modifications apportées au HEAD.
+                                                    Notez que tout commit ne se fera pas dans le dépôt distant.   
+  310  git status
+  311  nano index.html 
+  312  git status
+  313  ls
+  314  git clone https://github.com/Moina1706/my_first_repository.git       //La commande git clone est utilisée pour la vérification des dépôts.
+                                                                             Si le dépôt se trouve sur un serveur distant, utilisez:        
+                                                                             git clone alex@93.188.160.58:/chemin/vers/dépôt
+ 
+  324  git add index.html                           // La commande git add peut être utilisée pour ajouter des fichiers à l’index.
+  325  git commit                                   // La commande git commit permet de valider les modifications apportées au HEAD.
+ 
+  328  git push --set-upstream https://github.com/Moina1706/my_first_repository.git master          //  Git push est une autre commandes GIT de base.    
+                                                                                                        Un simple push envoie les modifications locales apportées à la branche principale associée :
+                                                                                                         git push origin master
+
+
+  329  git push --set-upstream https://github.com/Moina1706/my_first_repository.git 
+  330  git push --set-upstream https://github.com/Moina1706/my_first_repository.git master
+  331  git status
+  332  git add index.html                                                                         // La commande git add peut être utilisée pour ajouter des fichiers à l’index.
+  333  git status
+  334  nano index.html 
+  335  git status
+  336  git commit
+  337  clear
+  338  git status
+  339  git log
+  340  git push --set-upstream https://github.com/Moina1706/my_first_repository.git master
+  341  git remote                               
+  342  git remote -vv                                                                       // Cette commande remote permet à un utilisateur de se connecter à un dépôt distant.
+                                                                                               La commande suivante répertorie les dépôts distants actuellement configurés:
+                                                                                               git remote –v
+  
+  348  git status                                                                           // La commande git status affiche la liste des fichiers modifiés ainsi que les fichiers 
+                                                                                                qui doivent encore être ajoutés ou validés.
+  349  git remote add origin https://github.com/Moina1706/model.git
+  350  git push -u origin master                                                            // Git push est une autre commandes GIT de base. 
+  
+ 
+  357  git status
+  358  git init
+  359  git status
+  360  git add sprint_01/
+  361  git status
+  362  cd sprint_01/
+  363  ls
+  364  git status                           // La commande git status affiche la liste des fichiers modifiés ainsi que les fichiers  qui doivent encore être ajoutés ou validés.
+  365  ls
+  366  git add *                            // La commande git add peut être utilisée pour ajouter des fichiers à l’index.
+  367  git status                           // La commande git status affiche la liste des fichiers modifiés ainsi que les fichiers  qui doivent encore être ajoutés ou validés.
+  368  ls
+  369  git add groupgenerateur.html 
+  370  git status                           // La commande git status affiche la liste des fichiers modifiés ainsi que les fichiers  qui doivent encore être ajoutés ou validés.
+  371  git add sprint_01/
+  372  git remote add origin https://github.com/Moina1706/sprint_01.git
+ 
+  
+  376  cd sprint_01/                                    // Aller dans le repertoire sprint
+  377  git status
+  378  ls
+  379  git push -u origin 
+  380  git push --set-upstream origin master
+ 
+  390  git push -u origin master                        //Git push est une autre commandes GIT de base. Un simple push envoie les modifications locales apportées à la branche principale associée
+
+  392  git push -f origin master
+  393  cd sprint_01/
+  394  git fetch
+  395  git remote -vv                                       // Cette commande remote permet à un utilisateur de se connecter à un dépôt distant.
+                                                               La commande suivante répertorie les dépôts distants actuellement configurés:
+                                                               git remote –v
+
+  396  git remote add origin https://github.com/Moina1706/sprint_01.git
+  397  git remote -vv
+  398  git fetch                                // La commande git fetch communique avec un dépôt distant et rapporte toutes les informations qui sont dans ce dépôt 
+                                                    qui ne sont pas dans le vôtre et les stocke dans votre base de données locale.
+  399  git status
+  400  git checkout main                        // La commande git checkout est utilisée pour passer d’une branche à l’autre et en extraire le contenu dans votre répertoire de travail.
+  401  git checkout --help
+  402  git checkout -f main                     // La commande git checkout est utilisée pour passer d’une branche à l’autre et en extraire le contenu dans votre répertoire de travail.
+  403  git status
+  404  git log                                  // L’ exécution de cette commande génère le log d’une branche.
+
